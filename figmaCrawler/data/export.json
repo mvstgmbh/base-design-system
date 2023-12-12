@@ -40,7 +40,7 @@
         "Default Mode": {
           "Primary": {
             "100": { "$type": "color", "$value": "#e8e7e9" },
-            "500": { "$type": "color", "$value": "#717580" },
+            "500": { "$type": "color", "$value": "purple" },
             "900": { "$type": "color", "$value": "#181519" }
           },
           "Error": {

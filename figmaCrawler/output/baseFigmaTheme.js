@@ -3,7 +3,7 @@ export default {
     "colors": {
       "primary": {
         "100": "#e8e7e9",
-        "500": "#717580",
+        "500": "purple",
         "900": "#181519"
       },
       "error": {
