@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1 className='text-3xl font-bold underline text-click'>Hello world!</h1>
+      <h1 className='text-primary-500 font-bold underline text-click'>Hello world!</h1>
     </>
   );
 }
