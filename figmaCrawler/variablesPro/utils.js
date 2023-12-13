@@ -112,12 +112,40 @@ export const mapColorValues = (data) => {
   return dictionary;
 };
 
+export const mapFontValues = (data) => {
+  const fontSizes = findObjectByKey(data['Typescale'], 'Size');
+  const lineHeights = findObjectByKey(data['Typescale'], 'Line height');
+  const letterSpacings = findObjectByKey(data['Typescale'], 'Letter spacing');
+
+  const output = {};
+
+  // Map font size and line height
+  Object.keys(fontSizes).forEach((key) => {
+    const fontSize = fontSizes[key].$value;
+    const keyName = slugify(key);
+
+    const lineHeight = lineHeights[key].$value;
+    const letterSpacing = letterSpacings[key].$value;
+
+    output[keyName] = [
+      `${fontSize}px`,
+      {
+        lineHeight: `${lineHeight}px`,
+        letterSpacing: `${letterSpacing}px`,
+      },
+    ];
+  });
+
+  return output;
+};
+
 export const crawlFigmaFileData = (figmaFileObject) => {
   return {
     theme: {
       colors: mapColorValues(figmaFileObject),
       spacing: mapSpacingValues(figmaFileObject),
       borderRadius: mapBorderRadiusValues(figmaFileObject),
+      fontSize: mapFontValues(figmaFileObject),
     },
   };
 };
