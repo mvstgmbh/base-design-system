@@ -8,6 +8,7 @@ const getNormalizedRGBA = (rgbaString) => {
 
   if (match) {
     const alpha = parseFloat(match[4]);
+    // TODO: fixed decimal points to 3
     const normalizedAlpha = alpha > 1 ? alpha / 100 : alpha;
     const value = {
       r: parseInt(match[1]),
