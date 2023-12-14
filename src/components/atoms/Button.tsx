@@ -44,3 +44,5 @@ export const Button: FC<ButtonProps> = forwardRef(({ size, variant, children, ..
     </button>
   );
 });
+
+Button.displayName = 'Button';
