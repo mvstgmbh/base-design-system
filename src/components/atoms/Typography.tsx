@@ -4,6 +4,6 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const Typography = ({ as: Element, className, children }: Props) => {
+export const Typography = ({ as: Element = 'p', className, children }: Props) => {
   return <Element className={className}>{children}</Element>;
 };

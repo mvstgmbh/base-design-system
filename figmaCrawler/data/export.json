@@ -133,5 +133,17 @@
         }
       }
     }
+  },
+  {
+    "Screens": {
+      "modes": {
+        "breakpoint": {
+          "xl": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 1536 },
+          "lg": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 1280 },
+          "md": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 991 },
+          "sm": { "$scopes": ["ALL_SCOPES"], "$type": "float", "$value": 478 }
+        }
+      }
+    }
   }
 ]

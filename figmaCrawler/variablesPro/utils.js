@@ -139,6 +139,21 @@ export const mapFontValues = (data) => {
   return output;
 };
 
+const mapScreenValues = (data) => {
+  const breakpoints = findObjectByKey(data['Screens'], 'breakpoint');
+
+  const output = {};
+
+  Object.keys(breakpoints).forEach((key) => {
+    const value = breakpoints[key].$value;
+    const keyName = slugify(key);
+
+    output[keyName] = `${value}px`;
+  });
+
+  return output;
+};
+
 export const crawlFigmaFileData = (figmaFileObject) => {
   return {
     theme: {
@@ -146,6 +161,7 @@ export const crawlFigmaFileData = (figmaFileObject) => {
       spacing: mapSpacingValues(figmaFileObject),
       borderRadius: mapBorderRadiusValues(figmaFileObject),
       fontSize: mapFontValues(figmaFileObject),
+      screens: mapScreenValues(figmaFileObject),
     },
   };
 };
