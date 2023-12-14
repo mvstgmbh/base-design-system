@@ -126,6 +126,12 @@ export default {
           "letterSpacing": "0px"
         }
       ]
+    },
+    "screens": {
+      "xl": "1536px",
+      "lg": "1280px",
+      "md": "991px",
+      "sm": "478px"
     }
   }
 }

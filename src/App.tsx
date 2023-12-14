@@ -6,7 +6,7 @@ function App() {
     <>
       <p className='mt-xl'>Get ready for the </p>
       <Typography as='h1' className='text-6xl'>
-        Worlds Bestest Webpage
+        World's Bestest Webpage
       </Typography>
       <Button variant='primary' size='large'>
         Click me
