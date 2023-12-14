@@ -10,12 +10,8 @@ interface TypographyProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 export const Typography = forwardRef<HTMLHeadingElement, TypographyProps>(
-  ({ as: Element = 'p', className, children, ...props }, ref) => {
-    return (
-      <Element {...props} className={className} ref={ref}>
-        {children}
-      </Element>
-    );
+  ({ as: Element = 'p', className, ...props }, ref) => {
+    return <Element {...props} className={className} ref={ref} />;
   }
 );
 

@@ -1,18 +1,9 @@
 import { Button } from './components/atoms/Button';
 import { Typography } from './components/atoms/Typography';
+import { HomePage } from './components/pages/Home';
 
 function App() {
-  return (
-    <>
-      <p className='mt-xl'>Get ready for the </p>
-      <Typography as='h1' className='text-2xl md:text-6xl'>
-        World's Bestest Webpage
-      </Typography>
-      <Button variant='primary' size='large'>
-        Click me
-      </Button>
-    </>
-  );
+  return <HomePage />;
 }
 
 export default App;

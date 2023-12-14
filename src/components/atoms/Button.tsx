@@ -34,12 +34,8 @@ interface ButtonProps
   ref?: React.Ref<HTMLButtonElement>;
 }
 
-export const Button: FC<ButtonProps> = forwardRef(({ size, variant, children, ...props }, ref) => {
-  return (
-    <button ref={ref} type='button' className={buttonStyles({ variant, size })} {...props}>
-      {children}
-    </button>
-  );
+export const Button: FC<ButtonProps> = forwardRef(({ size, variant, ...props }, ref) => {
+  return <button ref={ref} type='button' className={buttonStyles({ variant, size })} {...props} />;
 });
 
 Button.displayName = 'Button';
