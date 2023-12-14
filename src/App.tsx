@@ -1,9 +1,16 @@
-import { Button } from './components/atoms/Button';
 import { Typography } from './components/atoms/Typography';
-import { HomePage } from './components/pages/Home';
 
 function App() {
-  return <HomePage />;
+  return (
+    <div className='p-lg'>
+      {/* <Button variant='primary' size='large'>
+        Click
+      </Button> */}
+      <Typography as='h1' className='text-6xl'>
+        Hello world!
+      </Typography>
+    </div>
+  );
 }
 
 export default App;

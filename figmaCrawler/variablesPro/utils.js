@@ -116,6 +116,7 @@ export const mapFontValues = (data) => {
   const fontSizes = findObjectByKey(data['Typescale'], 'Size');
   const lineHeights = findObjectByKey(data['Typescale'], 'Line height');
   const letterSpacings = findObjectByKey(data['Typescale'], 'Letter spacing');
+  const fontWeights = findObjectByKey(data['Typescale'], 'Font weight');
 
   const output = {};
 
@@ -126,12 +127,14 @@ export const mapFontValues = (data) => {
 
     const lineHeight = lineHeights[key].$value;
     const letterSpacing = letterSpacings[key].$value;
+    const fontWeight = fontWeights[key].$value;
 
     output[keyName] = [
       `${fontSize}px`,
       {
         lineHeight: `${lineHeight}px`,
         letterSpacing: `${letterSpacing}px`,
+        fontWeight,
       },
     ];
   });

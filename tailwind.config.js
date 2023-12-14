@@ -1,4 +1,4 @@
-import baseFigmaTheme from './figmaCrawler/output/baseFigmaTheme';
+import baseFigmaTheme from './generated/theme';
 
 const { fontSize, colors, spacing, borderRadius, screens } = baseFigmaTheme.theme;
 
@@ -8,10 +8,10 @@ export default {
   theme: {
     fontSize,
     screens,
+    borderRadius,
     extend: {
-      colors,
+      colors, // move to overrides
       spacing,
-      borderRadius,
     },
   },
   plugins: [],

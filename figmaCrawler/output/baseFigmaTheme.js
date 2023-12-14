@@ -3,9 +3,9 @@ export default {
     "colors": {
       "primary": {
         "100": "#ebf0ff",
-        "500": "#668ef7",
-        "700": "#3368f3",
-        "900": "#255ef3"
+        "500": "#255ef3",
+        "700": "#0c45da",
+        "900": "#0936a9"
       },
       "error": {
         "100": "#ffd8d8",
@@ -44,7 +44,10 @@ export default {
       "xl": "20px",
       "2xl": "24px",
       "3xl": "32px",
-      "4xl": "48px"
+      "4xl": "40px",
+      "5xl": "48px",
+      "6xl": "64px",
+      "7xl": "80px"
     },
     "borderRadius": {
       "zero": "0px",
@@ -60,70 +63,80 @@ export default {
         "12px",
         {
           "lineHeight": "16px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 400
         }
       ],
       "sm": [
         "14px",
         {
           "lineHeight": "20px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 400
         }
       ],
       "base": [
         "16px",
         {
           "lineHeight": "24px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 400
         }
       ],
       "lg": [
         "18px",
         {
           "lineHeight": "28px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "xl": [
         "20px",
         {
           "lineHeight": "28px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "2xl": [
         "24px",
         {
           "lineHeight": "32px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "3xl": [
         "30px",
         {
           "lineHeight": "36px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "4xl": [
         "36px",
         {
           "lineHeight": "40px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "5xl": [
         "48px",
         {
           "lineHeight": "48px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ],
       "6xl": [
         "60px",
         {
           "lineHeight": "60px",
-          "letterSpacing": "0px"
+          "letterSpacing": "0px",
+          "fontWeight": 700
         }
       ]
     },
