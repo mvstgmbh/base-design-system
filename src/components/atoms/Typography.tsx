@@ -1,7 +1,6 @@
 import { VariantProps, cva } from 'class-variance-authority';
 import { FC, HTMLAttributes, forwardRef } from 'react';
 import { cn } from '../../lib/utils';
-import { twMerge } from 'tailwind-merge';
 
 const typographyVariants = cva('', {
   variants: {
@@ -23,10 +22,6 @@ const typographyVariants = cva('', {
   },
 });
 
-interface TypographyVariants extends VariantProps<typeof typographyVariants> {}
-
-const typographyStyles = (variants: TypographyVariants) => twMerge(typographyVariants(variants));
-
 type HTMLTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div';
 
 interface TypographyProps
@@ -39,7 +34,7 @@ interface TypographyProps
 export const Typography: FC<TypographyProps> = forwardRef(
   ({ as: Element = 'p', variant = 'h1', className, ...props }, ref) => {
     return (
-      <Element {...props} className={cn(typographyStyles({ variant }), className)} ref={ref} />
+      <Element {...props} className={cn(typographyVariants({ variant }), className)} ref={ref} />
     );
   }
 );
