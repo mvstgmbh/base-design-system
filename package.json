@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "check-types": "tsc --pretty --noEmit",
     "dev": "vite",
     "generate-theme": "node ./figmaCrawler/variablesPro/generate-theme.js",
     "build": "tsc && vite build",
