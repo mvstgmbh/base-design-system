@@ -6,7 +6,7 @@ import dataFromExport from '../data/export.json' assert { type: 'json' };
 const output = crawlFigmaFileData(arrayToObject(dataFromExport));
 
 fs.writeFileSync(
-  'figmaCrawler/output/baseFigmaTheme.js',
+  'generated/theme.js',
   `export default ${JSON.stringify(output, null, 2)}
   `,
   'utf-8'

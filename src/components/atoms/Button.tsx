@@ -1,6 +1,6 @@
-import { VariantProps, cva } from "class-variance-authority";
-import React, { ButtonHTMLAttributes, FC, forwardRef } from "react";
-import { twMerge } from "tailwind-merge";
+import { VariantProps, cva } from 'class-variance-authority';
+import React, { ButtonHTMLAttributes, FC, forwardRef } from 'react';
+import { cn } from '../../lib/utils';
 
 const buttonVariants = cva(`px-md py-sm rounded-md text-white`, {
   variants: {
@@ -23,13 +23,6 @@ const buttonVariants = cva(`px-md py-sm rounded-md text-white`, {
   },
 });
 
-interface ButtonVariants extends VariantProps<typeof buttonVariants> {}
-const buttonStyles = (variants: ButtonVariants) =>
-  twMerge(buttonVariants(variants));
-
-interface ButtonProps extends VariantProps<typeof buttonVariants> {
-  children: React.ReactNode;
-}
 
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
@@ -37,17 +30,15 @@ interface ButtonProps
   ref?: React.Ref<HTMLButtonElement>;
 }
 
-export const Button: FC<ButtonProps> = forwardRef(
-  ({ size, variant, ...props }, ref) => {
-    return (
-      <button
-        ref={ref}
-        type="button"
-        className={buttonStyles({ variant, size })}
-        {...props}
-      />
-    );
-  },
-);
+export const Button: FC<ButtonProps> = forwardRef(({ size, variant, className, ...props }, ref) => {
+  return (
+    <button
+      ref={ref}
+      type='button'
+      className={cn(buttonVariants({ variant, size }), className)}
+      {...props}
+    />
+  );
+});
 
 Button.displayName = "Button";
