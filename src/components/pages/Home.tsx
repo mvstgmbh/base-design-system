@@ -20,7 +20,6 @@ export const EyeIcon = () => (
 );
 
 export const Badge = ({
-  variant,
   className,
   children,
 }: { variant: string; className: string } & PropsWithChildren) => (

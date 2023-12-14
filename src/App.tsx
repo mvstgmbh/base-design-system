@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { Button } from './components/atoms/Button';
 import { Typography } from './components/atoms/Typography';
+=======
+import { HomePage } from "./components/pages/Home";
+>>>>>>> e48e5cf (Undo tsconfig)
 
 function App() {
   return (
