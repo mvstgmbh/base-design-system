@@ -2,7 +2,6 @@ import { VariantProps, cva } from 'class-variance-authority';
 import React, { ButtonHTMLAttributes, FC, forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-// Customized button variations
 const buttonVariants = cva(`px-md py-sm rounded-sm text-white`, {
   variants: {
     variant: {
@@ -29,8 +28,6 @@ interface ButtonProps extends VariantProps<typeof buttonVariants> {
   children: React.ReactNode;
 }
 
-// It is our ButtonProps interafce it extends ButtonHTMLAttributes of HTMLButtonElement interface
-// Also extends from class-variance-authority lastly we passed our forwarded Reference type
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {

@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <p className='mt-xl'>Get ready for the </p>
-      <Typography as='h1' className='text-6xl'>
+      <Typography as='h1' className='text-2xl md:text-6xl'>
         World's Bestest Webpage
       </Typography>
       <Button variant='primary' size='large'>
