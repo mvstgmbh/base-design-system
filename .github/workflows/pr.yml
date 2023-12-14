@@ -1,4 +1,4 @@
-name: Code Quality
+name: PR Check
 
 on: [pull_request]
 
