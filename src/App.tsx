@@ -1,14 +1,15 @@
+import { Button } from './components/atoms/Button';
 import { Typography } from './components/atoms/Typography';
 
 function App() {
   return (
     <div className='p-lg'>
-      {/* <Button variant='primary' size='large'>
-        Click
-      </Button> */}
-      <Typography as='h1' className='text-6xl'>
+      <Typography as='h1' variant='h3'>
         Hello world!
       </Typography>
+      <Button variant='primary' size='large'>
+        Click me
+      </Button>
     </div>
   );
 }
