@@ -2,10 +2,10 @@ export default {
   "theme": {
     "colors": {
       "primary": {
-        "100": "#ebf0ff",
-        "500": "#255ef3",
-        "700": "#0c45da",
-        "900": "#0936a9"
+        "100": "#fff0eb",
+        "500": "#f33e25",
+        "700": "#da3d0c",
+        "900": "#a92609"
       },
       "error": {
         "100": "#ffd8d8",
@@ -47,16 +47,17 @@ export default {
       "4xl": "40px",
       "5xl": "48px",
       "6xl": "64px",
-      "7xl": "80px"
+      "7xl": "80px",
+      "8xl": "128px"
     },
     "borderRadius": {
-      "zero": "0px",
-      "xs": "4px",
-      "sm": "8px",
-      "md": "12px",
-      "lg": "16px",
-      "xl": "24px",
-      "max": "999px"
+      "none": "0px",
+      "xs": "0px",
+      "sm": "0px",
+      "md": "0px",
+      "lg": "0px",
+      "xl": "0px",
+      "full": "999px"
     },
     "fontSize": {
       "xs": [
@@ -88,7 +89,7 @@ export default {
         {
           "lineHeight": "28px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "xl": [
@@ -96,7 +97,7 @@ export default {
         {
           "lineHeight": "28px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "2xl": [
@@ -104,7 +105,7 @@ export default {
         {
           "lineHeight": "32px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "3xl": [
@@ -112,7 +113,7 @@ export default {
         {
           "lineHeight": "36px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "4xl": [
@@ -120,23 +121,23 @@ export default {
         {
           "lineHeight": "40px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "5xl": [
         "48px",
         {
-          "lineHeight": "48px",
+          "lineHeight": "56px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ],
       "6xl": [
         "60px",
         {
-          "lineHeight": "60px",
+          "lineHeight": "68px",
           "letterSpacing": "0px",
-          "fontWeight": 700
+          "fontWeight": 600
         }
       ]
     },
@@ -148,4 +149,3 @@ export default {
     }
   }
 }
-  
