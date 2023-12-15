@@ -2,24 +2,27 @@ import { VariantProps, cva } from 'class-variance-authority';
 import React, { ButtonHTMLAttributes, FC, forwardRef } from 'react';
 import { cn } from '../../lib/utils';
 
-const buttonVariants = cva(`px-md py-sm rounded-sm text-white`, {
+const buttonVariants = cva(`px-md py-sm rounded-md text-white`, {
   variants: {
     variant: {
-      primary: 'bg-primary-500 hover:bg-primary-900',
-      warning: 'bg-warning-500 hover:bg-warning-900',
-      error: 'bg-error-500 hover:bg-error-900',
-      success: 'bg-success-500 hover:bg-success-900',
+      primary: "bg-primary-500 hover:bg-primary-900",
+      secondary:
+        "border-neutral-background-900 text-neutral-background-900/90 border hover:text-light-900 hover:bg-neutral-background-900",
+      warning: "bg-warning-500 hover:bg-warning-900",
+      error: "bg-error-500 hover:bg-error-900",
+      success: "bg-success-500 hover:bg-success-900",
     },
     size: {
-      small: 'py-xs px-sm',
-      large: 'text-xl py-3 px-6',
+      small: "py-sm px-lg",
+      large: "text-xl py-3 px-6",
     },
   },
   defaultVariants: {
-    size: 'small',
-    variant: 'primary',
+    size: "small",
+    variant: "primary",
   },
 });
+
 
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
@@ -38,4 +41,4 @@ export const Button: FC<ButtonProps> = forwardRef(({ size, variant, className, .
   );
 });
 
-Button.displayName = 'Button';
+Button.displayName = "Button";

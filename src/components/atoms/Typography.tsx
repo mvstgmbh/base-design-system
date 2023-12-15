@@ -39,4 +39,4 @@ export const Typography: FC<TypographyProps> = forwardRef(
   }
 );
 
-Typography.displayName = 'Typography';
+Typography.displayName = "Typography";
