@@ -23,7 +23,7 @@ export const Badge = ({
   className,
   children,
 }: { variant: string; className: string } & PropsWithChildren) => (
-  <div className={cn(className, "px-md py-xs rounded-full")}>
+  <div className={cn(className, "px-md py-xs rounded-max")}>
     <Typography variant="subHeading" as="span">
       {children}
     </Typography>
@@ -35,8 +35,8 @@ export const HomePage = () => {
     <div className="bg-white flex flex-col gap-[120px]">
       <div className="flex flex-col gap-6xl">
         <Navbar />
-        <div className="relative grid grid-cols-2 gap-4xl">
-          <div className="w-full pl-7xl max-w-2xl flex flex-col gap-3xl">
+        <div className="relative grid grid-cols-2 gap-4xl py-[70px] overflow-hidden pb-20">
+          <div className="w-full pl-7xl max-w-2xl flex flex-col gap-3xl overflow-hidden">
             <div className="w-full">
               <EyeIcon />
             </div>
@@ -45,7 +45,7 @@ export const HomePage = () => {
                 variant="primary"
                 className="text-primary-700 bg-primary-100"
               >
-                Whats new
+                What’s new
               </Badge>
               <Badge variant="secondary" className="text-neutral-900/50">
                 Lorem ipsum color

@@ -58,7 +58,7 @@ export const Navbar = () => {
           <Link to={nav.href}>{nav.name}</Link>
         ))}
       </div>
-      <div className="flex gap-base">
+      <div className="flex gap-lg">
         <Button variant="secondary">Button</Button>
         <Button variant="primary">Button</Button>
       </div>
