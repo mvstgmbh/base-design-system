@@ -2,7 +2,7 @@ export default {
   "theme": {
     "colors": {
       "primary": {
-        "100": "#fff0eb",
+        "100": "green",
         "500": "#f33e25",
         "700": "#da3d0c",
         "900": "#a92609"
